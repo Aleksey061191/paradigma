@@ -1,0 +1,72 @@
+.main-buttoms {
+  @include flex-between;
+  margin: 45px 0 38px;
+  @include media-laptopmini {
+    margin: 0;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.textButton {
+  color: $color-text-button;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  @include media-tablet {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+
+.btn {
+  @include flex-between;
+  box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+  border-radius: 500px;
+  border: none;
+  height: 100px;
+  @include media-tablet {
+    height: 60px;
+  }
+}
+
+.costButton {
+  background: $color-costButton;
+  padding: 0 40px 0 53px;
+  width: 50%;
+  transition: 0.3s;
+  p {
+    width: 213px;
+  }
+  &:hover {
+    background: $color-hover-prime-btn;
+    box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+    padding-left: 56px;
+    padding-right: 43px;
+  }
+  @include media-laptopmini {
+    width: 100%;
+  }
+}
+
+.objButton {
+  background: $color-objButton;
+  padding: 0 40px 0 56px;
+  width: 45%;
+  transition: 0.3s;
+  p {
+    width: 180px;
+  }
+  &:hover {
+    background: $color-hover;
+    box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+    padding-left: 59px;
+    padding-right: 43px;
+  }
+  @include media-laptopmini {
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+  background: url("../images/BG.png") no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  font-family: "Montserrat", sans-serif;
+  color: $color-text;
+  position: relative;
+  @include media-tablet {
+    background: url("../images/BG.png") no-repeat,
+      linear-gradient(to top, #fff 20%, $color-background 21%);
+    background-size: contain;
+    background-position: bottom;
+  }
+}

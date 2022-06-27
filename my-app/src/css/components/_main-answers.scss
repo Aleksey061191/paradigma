@@ -1,0 +1,41 @@
+.main-answers {
+  display: flex;
+  margin-bottom: 162px;
+  @include media-laptopmini {
+    margin-bottom: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main-answers_text {
+  margin: 0 0 0 16px;
+  max-width: 234px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  @include media-laptopmini {
+    font-size: 12px;
+    max-width: 350px;
+  }
+  @include media-tablet {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.main-answers-img-container {
+  img {
+    width: 100%;
+  }
+  @include media-laptopmini {
+    margin: 18px 0 6px;
+  }
+  @include media-tablet {
+    width: 20px;
+
+  }
+}

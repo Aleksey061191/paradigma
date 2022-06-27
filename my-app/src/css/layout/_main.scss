@@ -1,0 +1,36 @@
+.main {
+  position: relative;
+  margin-top: 80px;
+  @include media-tablet {
+    margin-top: 34px;
+  }
+}
+
+.main-text {
+  margin-top: 32px;
+  max-width: 728px;
+  @include media-laptopmini {
+    @include flex-center;
+    flex-direction: column;
+    margin-bottom: 178px;
+  }
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  @include media-laptopmini {
+    @include flex-center;
+  }
+}
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+  @include media-laptopmini {
+    flex-direction: column-reverse;
+    width: 45vw;
+    min-width: 276px;
+    // margin-bottom: 69px;
+  }
+}

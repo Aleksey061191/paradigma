@@ -1,0 +1,20 @@
+@import "base/normalize";
+
+//Abstract
+@import "abstract/constants";
+@import "abstract/mixins";
+
+//Base
+@import "base/base";
+
+//Components
+@import "components/mainText";
+@import "components/mainButtons";
+@import "components/main-answers";
+@import "components/bullets";
+@import "components/modal";
+
+//Layout
+@import "layout/header";
+@import "layout/wrapper";
+@import "layout/main";
